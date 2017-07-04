@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GithubUserSearch</string>
+
+    <string name="no_result">No Data Found</string>
+    <string name="search_github_users">Search Github users</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="something_when_wrong">Oops Something when wrong</string>
+</resources>

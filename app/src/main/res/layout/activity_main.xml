@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.apri.githubusersearch.MainActivity">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar" />
+
+    <RelativeLayout
+        android:id="@+id/search_container"
+        android:elevation="8dp"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:hint="@string/search_github_users"
+            android:background="@drawable/rounded_white_bg"
+            android:drawableStart="@drawable/ic_search_gray"
+            android:drawableLeft="@drawable/ic_search_gray"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:gravity="start|center_vertical"
+            android:textSize="15sp"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="36dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/no_result_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_result"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_below="@id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp">
+        <ListView
+            android:id="@+id/list_result"
+            android:dividerHeight="1dp"
+            android:divider="@color/zircon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

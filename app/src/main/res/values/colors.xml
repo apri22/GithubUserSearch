@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1FBCD2</color>
+    <color name="colorPrimaryDark">#329AA6</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="zircon">#E1E4E8</color>
+</resources>
